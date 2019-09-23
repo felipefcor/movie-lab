@@ -1,0 +1,149 @@
+.fas
+    color: $color-green-clair
+    border: none
+    cursor: pointer
+    appearance: none
+    &:not([disabled]):hover,
+    &:not([disabled]):focus 
+        outline: none
+        box-shadow: none
+    &:focus 
+        outline: none
+        box-shadow: none
+    &[disabled] 
+        cursor: not-allowed 
+
+
+
+.containerDetail
+    width: 100%
+    display: flex
+    align-items: center
+    height: 100%
+    margin: 10px auto
+    margin-top: 45px
+    flex-direction: row
+    background-color: $color-grey-back
+
+.panelDetail
+    display: flex
+    flex-direction: row
+    width: 100%
+    z-index: 2
+    text-align: left
+    left: 10px
+    top: 0
+    z-index: 3
+    flex-wrap: wrap
+    &__director,
+    &__mainCast,
+    &__description,
+    &__date,
+    &__title,
+    &__vote,
+    &__director--name,
+    &__mainCast--name,
+    &__description--description
+        @extend %text-base-small
+        width: 90%
+        color: $color-beige
+        opacity: 0.9
+        font-weight: 800
+        margin-left: 25px
+        margin-top: 10px
+        padding-bottom: 10px
+        margin-right: 25px
+        top: 10px
+        border-bottom: 0.1rem solid $color-beige
+    &__vote
+        color: $color-green-clair
+    &__title
+        margin-top: 60px
+    &__director,
+    &__mainCast
+        border: none
+        &--name
+            font-size: 0.7rem
+            font-weight: 200
+            margin-top: 0
+            border: none
+            list-style: none
+    &__mainCast
+        border-top: 0.1rem solid $color-beige
+        padding-top: 10px
+        margin-top: 5px
+
+    &__description
+        border-top: 0.1rem solid $color-beige
+        padding-top: 10px
+        &--description
+            font-weight: 200
+            font-size: 0.65rem
+            line-height: 1.2rem
+            margin-bottom: 30px
+            
+.fav
+    position: absolute
+    left: 50px
+    top: 155px
+    width: 30px
+    height: 30px
+    opacity: 1
+    color: $color-beige
+    z-index: 2
+    &:not([disabled]):hover,
+    &:not([disabled]):focus 
+        outline: none
+        box-shadow: none
+    &:focus 
+        outline: none
+        box-shadow: none
+    &[disabled] 
+        cursor: not-allowed 
+
+
+
+ 
+.panelImage
+    display: flex
+    width: 100%
+    margin: 10px auto
+    padding-right: 10px
+    top: 10px
+    right: 5px
+    &__image
+        top: 10px
+        width: 100%
+        opacity: 0.7
+
+.close
+    &__detail
+        &--detail    
+            position: absolute
+            right: 10px
+            width: 30px
+            top: 170px
+            height: 30px
+            opacity: 1
+            color: $color-beige
+            z-index: 2
+
+            &:hover 
+                opacity: 0.2
+                color: $color-light-grey
+            &:before,
+            &:after 
+                position: absolute
+                left: 10px
+                content: ' '
+                height: 20px
+                width: 2px
+                background-color: $color-beige
+                opacity: 1
+            &:before 
+                transform: rotate(45deg)
+            &:after 
+                transform: rotate(-45deg)
+           
+                       
+

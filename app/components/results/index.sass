@@ -1,0 +1,112 @@
+.mosaicPanel    
+    width:95%
+    display: flex
+    align-items: center
+    margin: 10px auto
+    position: relative
+    text-align: center
+    flex-direction: column
+    margin-top: 60px
+
+.mosaicList
+    width: 100%
+    position: relative
+    align-items: center
+    margin: 5px auto
+    display: flex
+    flex-direction: column
+
+.mosaicImage    
+    width: 100%
+    position: relative
+    align-items: center
+    margin: 0 auto
+    display: flex
+    flex-direction: column
+    &__image
+        width: 100%
+        opacity: 0.9
+    &__background
+        background-color: $color-black
+        opacity: 0.5
+        width: 100%
+        height: 60px
+        z-index: 1
+        position: absolute
+        bottom: 0
+
+.mosaicInfo
+    width: 100%
+    height: 50px
+    position: absolute
+    bottom: 0
+    z-index: 2
+    text-align: left
+    left:10px
+    bottom: 10px
+
+    &__title
+        @extend %text-base-small
+        color: $color-beige
+        font-weight: 800
+        margin-left:50px
+        margin-top: 10px
+        position: absolute
+
+    &__vote
+        @extend %text-base-medium
+        width: 40px
+        height: 40px
+        text-align: center
+        color: $color-green-clair
+        font-weight: 500
+        background-color: $color-black
+        padding: 5px
+        border: 0.2rem solid $color-black
+        border-radius: 4px
+        left: 5px
+        bottom: 0px
+        position: absolute
+    &__date
+        @extend %text-base-small
+        color: $color-beige
+        opacity: 0.8
+        font-weight: 500
+        left: 50px
+        top: 30px
+        position: absolute
+    &__fav
+        color: $color-beige
+        font-size: 1.5rem
+        font-weight: 500
+        right: 25px
+        top: 13px
+        position: absolute
+    &__list
+        visibility: visible 
+        font-size: 1rem
+        font-weight: 200
+        height: 1px
+        opacity: 0.8
+        top: 17px
+        right: 55px
+        position: absolute
+    &__list,
+    &__fav
+        background-color: transparent
+        border: none
+        cursor: pointer
+        appearance: none
+
+        &:not([disabled]):hover,
+        &:not([disabled]):focus 
+            outline: none
+            box-shadow: none
+        &:focus 
+            outline: none
+            box-shadow: none
+        &[disabled] 
+            cursor: not-allowed 
+        
+
+

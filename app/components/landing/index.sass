@@ -1,0 +1,219 @@
+
+main
+    padding-top: 85px
+    
+.panel--nav
+    width: 100%
+    height: 85px
+    position: fixed
+    background-color: $color-beige
+    z-index: 4
+.logo
+    width: 100%
+    letter-spacing: 0.2rem
+    text-align: center
+    text-justify: center
+    position: absolute
+    font-size: 2.2rem
+    top: 17px
+    text-decoration: none
+    font-weight: 500
+    font-family: $font
+    z-index: 5
+
+.icons-header
+    display: flex
+    width: 70px
+    position: absolute
+    right: 0
+    top: 10px
+    z-index: 5
+    ul
+        overflow: auto
+        align-items: right
+        list-style-type: none
+        right: 10px
+        margin: 15px
+    li
+        height: 25px
+        list-style-type: none
+        padding: 0
+        margin: 20px 15px
+    li,
+    a,
+    img
+        text-decoration: none
+        width: 60%
+        top: 20px
+        font-size: 1.5rem
+        color: $color-black
+        text-transform: uppercase
+        -webkit-transition: all 0.5s ease
+        &:hover 
+            color: $color-green-clair 
+    img
+        margin: 0 auto
+        padding-top: 10px
+        
+
+
+
+.menuToggle
+    display: block
+    position: relative
+    top: 32px
+    left: 23px
+    width:40px
+    margin: 1px
+    -webkit-user-select: none
+    user-select: none
+    z-index: 7
+    a
+        text-decoration: none
+        @extend %text-base-medium
+        color: $color-black
+        transition: color 0.3s ease
+        line-height: 40px
+        font-weight: 500
+        padding-left: 45px
+
+.menuToggle
+     input
+
+        display: block
+        width: 30px
+        height: 22px
+        position: absolute
+        top: -7px
+        left: -5px
+        
+        cursor: pointer
+        
+        opacity: 0 
+        z-index: 6
+        
+        -webkit-touch-callout: none
+.menuToggle
+    span
+        display: block
+        width: 30px
+        height: 3px
+        margin-bottom: 5px
+        position: relative
+        
+        background: $color-black
+        border-radius: 1px
+        z-index: 5
+        transform-origin: 5px 0px
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),opacity 0.55s ease                              
+.menuToggle 
+    span:first-child
+        transform-origin: 0% 0%
+
+
+.menuToggle 
+    span:nth-last-child(2)
+        transform-origin: 0% 100%
+
+.menuToggle 
+    input:checked ~ span
+        opacity: 1
+        transform: rotate(45deg) translate(-2px, -1px)
+        background: $color-black
+.menuToggle 
+    input:checked ~ span:nth-last-child(3)
+        opacity: 0
+        transform: rotate(0deg) scale(0.2, 0.2)
+.menuToggle 
+    input:checked ~ span:nth-last-child(2)
+        transform: rotate(-45deg) translate(0, -1px)
+
+.menu 
+    li
+        padding: 0
+        font-size: 22px
+        transition: all 250ms cubic-bezier(0.675, 0.420, 0.090, 0.870)
+        &:hover
+            background-color: $color-green-clair
+
+.menuToggle 
+    input:checked ~ ul
+
+        transform: none
+
+
+.menu
+  position: absolute
+  width: 200px
+  margin: 0px 0 0 -50px
+  padding-left: 0
+  top: 52px
+  z-index: 9
+  padding-top: 0px  
+  background: $color-beige
+  list-style-type: none
+  -webkit-font-smoothing: antialiased
+  z-index: 8
+
+  
+  transform-origin: 0% 0%
+  transform: translate(-100%, 0)
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0)
+
+
+.panel--foot
+    width: 100%
+    height: 100px
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: row    
+    
+    flex-wrap: wrap
+    bottom: 10px
+
+    ul
+        overflow: auto
+        width: 100%
+        list-style-type: none
+        bottom: 30px
+        padding: 15px
+        display: flex
+        flex-wrap: wrap
+
+        
+        border-top: 0.01rem solid $color-green-clair
+        border-bottom: 0.01rem solid $color-green-clair
+    li
+        height: 25px
+        list-style-type: none
+        text-decoration: none
+        margin: 30px 30px        
+    li,
+    a,
+    i
+        text-decoration: none
+        font-size: 1.5rem
+        margin: 1px auto
+        color: $color-black
+        text-transform: uppercase
+        -webkit-transition: all 0.5s ease
+        &:hover 
+            color: $color-light-grey
+
+
+.registered-name
+        @extend %text-base-small
+        width: 100%
+        font-weight: 800
+        margin: 15px auto
+        text-align: center
+        bottom: 5px
+
+.fas
+    color: $color-green-clair
+
+
+
+

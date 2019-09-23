@@ -1,0 +1,35 @@
+ul
+    display: grid
+
+li 
+    list-style: none
+.container
+    margin-top: 60px
+.container_image
+    width:95%
+    display: flex
+    align-items: center
+    margin: 5px auto
+    position: relative
+    text-align: center
+    img
+        width: 100%
+        position: relative
+        margin: 0 auto
+    p
+        @extend %text-base-medium
+        color: $color-beige
+        letter-spacing: 0.2em
+        position: absolute
+        align-items: center
+        width: 100%
+        bottom: 70px
+    .title_collection
+        @extend %text-base-big
+        font-size: 1.6em
+        color: $color-beige
+        font-weight: 800
+        position: absolute
+        align-items: center
+        width: 100%
+        bottom: 30px

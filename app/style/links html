@@ -1,0 +1,16 @@
+
+** font family
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+
+** search icon
+<i class="fal fa-search"></i>
+
+** fav icon
+<i class="fas fa-heart"></i>
+
+** list icon
+<i class="fas fa-list-ul"></i>
+
+** logout icon
+<i class="fas fa-external-link-alt"></i>
+
